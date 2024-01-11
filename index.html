@@ -11,7 +11,7 @@
 
   <title>Acoustic Music by Said Betty</title>
   <meta name="description" content="Said Betty is an acoustic musical act based in Gold Coast, Australia and performed by Marco Moretti covering the most popular hit songs.">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -31,7 +31,7 @@
       flex-direction: column;
       align-items: center;
       max-width: 700px;
-      padding: 15px;
+      padding: 20px;
     }
     .logo {
       width: 300px;
@@ -39,28 +39,33 @@
       padding: 5px;
       border: 2px solid #2b2c28;
       border-radius: 100%;
-      margin-bottom: 30px;
     }
     .logo img {
       width: 100%;
       height: 100%;
       border-radius: 100%;
     }
+    .description {
+      margin: 15px 0;
+    }
+    a {
+      text-decoration: none;;
+    }
     p {
       font-size: 16px;
     }
     h1 {
       font-size: 70px;
-      text-align: center;
-      margin: 0;
+      margin-bottom: 30px;
+      line-height: 1.2;
     }
     h2 {
-      font-size: 30px;
-      text-align: center;
+      font-size: 24px;
+      margin-bottom: 15px;
       margin: 0;
-    }   
-    a {
-      text-decoration: none;
+    }
+    h3 {
+      margin: 30px 0 10px 0;
     }
     .social-wrapper {
       display: flex;
@@ -76,6 +81,7 @@
       height: 30px;
       padding: 10px;
       border-radius: 100px;
+      text-decoration: none;
     }
     .social-wrapper i {
       font-size: 20px;
@@ -98,21 +104,22 @@
     }
     .social-link-title {
       font-size: 14px;
-      margin: 5px 0;
+      margin: 5px 0 0 0;
       padding: 0;
       font-weight: normal;
     }
-    .Footer {
-      margin-top: 30px;
-      background: #eee;
-      padding: 10px 20px;
-      border-radius: 12px;
+    .footer {
+      padding: 30px;
     }
     .footer-links {
       display: inline-block;
-      padding: 0 20px;
+      margin: 5px;
       color: #2b2c28;
-      font-size: 14px;
+      font-size: 12px;
+      background-color: #2b2c28;
+      padding: 3px 8px;
+      border-radius: 5px;
+      color: #fff;
     }
     .footer-links:hover {
       text-decoration: underline;
@@ -120,6 +127,38 @@
     .fa-star {
       margin-right: 5px;
     }
+
+    @media screen and (max-width: 767px) {
+      .page-wrapper {
+        height: auto;
+      }
+      .logo {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+      }
+      .heading h1 {
+        font-size: 50px;
+      }
+      .heading h2 {
+        font-size: 20px;
+      }
+      .social-link {
+        margin: 5px;
+      }
+      .social-link-title {
+        display: none;
+      }
+      .social-wrapper .icon {
+        padding:10px;
+        height: 20px;
+        width: 20px;
+      }
+      .social-wrapper i {
+        font-size: 16px;
+      }
+    }
+
   </style>
   
 </head>
@@ -133,7 +172,7 @@
         </div>
         <div class="heading">
           <h1>Said Betty</h1>
-          <h3>Live Music, Acoustic Duo & DJ</h3>
+          <h2>Live Music, Acoustic Duo & DJ</h2>
         </div>
         <div class="description">
           <p>Immerse your events in musical allure with our Gold Coast-based duo, specializing in weddings and corporate gatherings. From the lively Gold Coast to the vibrant hubs of Brisbane, Toowoomba, Sunshine Coast, and Byron Bay, we're poised to bring enchantment to your celebrations.</p>
@@ -160,11 +199,11 @@
             <h4 class="social-link-title">Reverbnation</h4>
           </div>   
         </div>
-        <div class="Footer">
-          <a class="footer-links" href="/docs/Said Betty - A7 Flyer.pdf"><i class="fa-solid fa-star"></i>Promo Flyer</a>
-          <a class="footer-links" href="/docs/Said Betty - PLI 2024.pdf"><i class="fa-solid fa-star"></i>PLI Certificate</a>
-          <a class="footer-links" href="/docs/Said Betty - Stage Plan.pdf"><i class="fa-solid fa-star"></i>Stage Plan</a>
-          <a class="footer-links" href="/docs/Said Betty - Equipment.pdf"><i class="fa-solid fa-star"></i>Equipment</a>
+        <div class="footer">
+          <a class="footer-links" href="/docs/Said Betty - A7 Flyer.pdf">Flyer</a>
+          <a class="footer-links" href="/docs/Said Betty - Stage Plan.pdf">Stage Plan</a>
+          <a class="footer-links" href="/docs/Said Betty - PLI 2024.pdf">Liability</a>
+          <a class="footer-links" href="#">Bookings</a>
         </div>
       </div>
     </div>
