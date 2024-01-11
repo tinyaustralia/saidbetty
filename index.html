@@ -127,6 +127,27 @@
       margin: 5px;
       font-size: 14px;
     }
+    
+    
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(10deg);}
+}
+ 
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+ 
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+}
+    
 
     @media screen and (max-width: 767px) {
       .page-wrapper {
@@ -154,7 +175,7 @@
     <div class="content-wrapper">
       <div class="content">
         <div class="logo">
-          <img src="images/said-betty2.jpg" alt="Said Betty Poster">
+          <img class="swingimage" src="images/said-betty2.jpg" alt="Said Betty Poster">
         </div>
         <div class="heading">
           <h1>Said Betty</h1>
