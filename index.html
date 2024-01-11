@@ -62,13 +62,18 @@
     a {
       text-decoration: none;
     }
+    .social-wrapper {
+      display: flex;
+    }
+    .social-link {
+      margin: 20px;
+    }
     .social-wrapper .icon {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       width: 30px;
       height: 30px;
-      margin: 10px;
       padding: 10px;
       border-radius: 100px;
     }
@@ -91,15 +96,29 @@
     .reverbnation-link {
       background-color: #09b283;
     }
+    .social-link-title {
+      font-size: 14px;
+      margin: 5px 0;
+      padding: 0;
+      font-weight: normal;
+    }
     .Footer {
-      margin-top: 20px;
+      margin-top: 30px;
+      background: #eee;
+      padding: 10px 20px;
+      border-radius: 12px;
     }
     .footer-links {
       display: inline-block;
-      padding: 5px;
+      padding: 0 20px;
       color: #2b2c28;
       font-size: 14px;
+    }
+    .footer-links:hover {
       text-decoration: underline;
+    }
+    .fa-star {
+      margin-right: 5px;
     }
   </style>
   
@@ -120,17 +139,32 @@
           <p>Immerse your events in musical allure with our Gold Coast-based duo, specializing in weddings and corporate gatherings. From the lively Gold Coast to the vibrant hubs of Brisbane, Toowoomba, Sunshine Coast, and Byron Bay, we're poised to bring enchantment to your celebrations.</p>
         </div>
         <div class="social-wrapper">
-          <a class="icon youtube-link" href="https://www.youtube.com/@saidbetty"><i class="fa-brands fa-youtube"></i></a>
-          <a class="icon facebook-link" href="https://www.facebook.com/saidbetty.fb"><i class="fa-brands fa-facebook-f"></i></a>
-          <a class="icon instagram-link" href="https://www.instagram.com/saidbetty.ig"><i class="fa-brands fa-instagram"></i></a>
-          <a class="icon soundcloud-link" href="https://www.soundcloud.com/saidbetty"><i class="fa-brands fa-soundcloud"></i></a>
-          <a class="icon reverbnation-link" href="https://www.reverbnation.com/saidbetty"><i class="fa-solid fa-headphones-simple"></i></a>         
+          <div class="social-link">
+            <a class="icon youtube-link" href="https://www.youtube.com/@saidbetty"><i class="fa-brands fa-youtube"></i></a>
+            <h4 class="social-link-title">Youtube</h4>
+          </div>
+          <div class="social-link">
+            <a class="icon facebook-link" href="https://www.facebook.com/saidbetty.fb"><i class="fa-brands fa-facebook-f"></i></a>
+            <h4 class="social-link-title">Facebook</h4>
+          </div>
+          <div class="social-link">
+            <a class="icon instagram-link" href="https://www.instagram.com/saidbetty.ig"><i class="fa-brands fa-instagram"></i></a>
+            <h4 class="social-link-title">Instagram</h4>
+          </div>
+          <div class="social-link">
+            <a class="icon soundcloud-link" href="https://www.soundcloud.com/saidbetty"><i class="fa-brands fa-soundcloud"></i></a>
+            <h4 class="social-link-title">Soundcloud</h4>
+          </div>
+          <div class="social-link">
+            <a class="icon reverbnation-link" href="https://www.reverbnation.com/saidbetty"><i class="fa-solid fa-headphones-simple"></i></a>      
+            <h4 class="social-link-title">Reverbnation</h4>
+          </div>   
         </div>
         <div class="Footer">
-          <a class="footer-links" href="/docs/Said Betty - A7 Flyer.pdf">Promo Flyer</a>
-          <a class="footer-links" href="/docs/Said Betty - PLI 2024.pdf">PLI Certificate</a>
-          <a class="footer-links" href="/docs/Said Betty - Stage Plan.pdf">Stage Plan</a>
-          <a class="footer-links" href="/docs/Said Betty - Equipment.pdf">Equipment</a>
+          <a class="footer-links" href="/docs/Said Betty - A7 Flyer.pdf"><i class="fa-solid fa-star"></i>Promo Flyer</a>
+          <a class="footer-links" href="/docs/Said Betty - PLI 2024.pdf"><i class="fa-solid fa-star"></i>PLI Certificate</a>
+          <a class="footer-links" href="/docs/Said Betty - Stage Plan.pdf"><i class="fa-solid fa-star"></i>Stage Plan</a>
+          <a class="footer-links" href="/docs/Said Betty - Equipment.pdf"><i class="fa-solid fa-star"></i>Equipment</a>
         </div>
       </div>
     </div>
