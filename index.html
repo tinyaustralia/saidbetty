@@ -1,14 +1,19 @@
+---
+title: Home
+layout: default
+---
+
 <!DOCTYPE html>
 
 <!-- file:///Users/Marco/Development/saidbetty/index.html -->
 
 <head>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-
-  <script src="https://kit.fontawesome.com/723136ff33.js" crossorigin="anonymous"></script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1E86TMVK35"></script>
@@ -16,270 +21,79 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    
     gtag('config', 'G-1E86TMVK35');
   </script>
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/723136ff33.js" crossorigin="anonymous"></script>
+
+  <!-- Meta -->
   <title>Acoustic Music by Said Betty</title>
   <meta name="description" content="Said Betty is an acoustic musical act based in Gold Coast, Australia and performed by Marco Moretti covering the most popular hit songs.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-  <style>
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 400;
-      color: #fff;
-      text-align: center;
-      background-color: #222;
-    }
-    @keyframes bkg-gradient {
-      0% {
-      background-position: 0% 50%;
-      }
-      50% {
-      background-position: 100% 50%;
-      }
-      100% {
-      background-position: 0% 50%;
-      }
-    }
-    .page-wrapper {
-      display: flex;
-      height: 100%;
-      align-items: center;
-      justify-content: center;
-      padding: 0 20px;
-      background-image: url("images/hero-bkg.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 700px;
-      padding: 0 20px;
-    }
-    .swingstring {
-      width: 1px;
-      background-color: #fff;
-    }
-    .logo {
-      width: 300px;
-      height: 300px;
-      padding: 5px;
-      border: 2px solid #fff;
-      border-radius: 100%;
-      margin-top: -10px;
-    }
-    .logo img {
-      width: 100%;
-      height: 100%;
-      border-radius: 100%;
-    }
-    .description {
-      margin: 15px 0;
-    }
-    a {
-      color: #fff;
-      text-decoration: none;
-    }
-    p {
-      font-size: 16px;
-    }
-    h1 {
-      font-family: 'Bangers', system-ui;
-      font-size: 70px;
-      margin-bottom: 30px;
-      line-height: 1.2;
-      letter-spacing: 5px;
-    }
-    h2 {
-      font-size: 24px;
-      margin-bottom: 15px;
-      margin: 0;
-    }
-    h3 {
-      margin: 30px 0 10px 0;
-    }
-    .button {
-      background-color: #333;
-      padding: 10px 20px;
-      margin: 15px 0 50px;
-      border: 1px solid #444;
-      border-radius: 8px;
-      text-transform: uppercase;
-      box-shadow: 0 3px 15px -10px #000;
-    }
-    .social-wrapper {
-      display: flex;
-    }
-    .social-link {
-      margin: 0 15px;
-    }
-    .social-wrapper .icon {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 25px;
-      height: 25px;
-      padding: 15px;
-      border-radius: 100%;
-      color: #fff;
-    }
-    .social-wrapper i {
-      font-size: 22px;
-    }
-    .youtube-link {
-      background-color: #ff0000;
-    }
-    .facebook-link {
-      background-color: #3c5998;
-    }
-    .instagram-link {
-      background-color: #c32aa3;
-    }
-    .soundcloud-link {
-      background-color: #ff5500;
-    }
-    .reverbnation-link {
-      background-color: #09b283;
-    }
-    .footer {
-      padding: 30px;
-    }
-    .footer-links {
-      display: inline-block;
-      margin: 0 15px;
-      font-size: 14px;
-    }
-    
-    @-webkit-keyframes swinging {
-      0%{-webkit-transform: rotate(10deg);}
-      50%{-webkit-transform: rotate(-5deg)}
-      100%{-webkit-transform: rotate(10deg);}
-    }
-    @keyframes swinging {
-      0%{transform: rotate(10deg);}
-      50%{transform: rotate(-5deg)}
-      100%{transform: rotate(10deg);}
-    }
-    .swingimage {
-      margin-top: -15px;
-      -webkit-transform-origin: 50% 0;
-      transform-origin: 50% 0;
-      -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
-      animation: swinging 3.5s ease-in-out forwards infinite;
-    }
-    .additional-links {
-      display: none;
-    }
   
-    .tooltip {
-      position: relative;
-      display: inline-block;
-    }
-
-    .tooltip .tooltiptext {
-      visibility: hidden;
-      background-color: black;
-      color: #fff;
-      text-align: center;
-      padding: 5px;
-      border-radius: 6px;
-      font-size: 14px;
-      position: absolute;
-      left:-30px;
-      bottom: -40px;
-      z-index: 1;
-      width:100px;
-    }
-
-    .tooltip:hover .tooltiptext {
-      visibility: visible;
-    }
-
-    @media screen and (max-width: 767px) {
-      .page-wrapper {
-      height: 100%;
-      }
-      .logo {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 20px;
-      }
-      .heading h1 {
-        font-size: 50px;
-      }
-      .heading h2 {
-        font-size: 20px;
-      }
-      .social-link {
-        margin: 0 5px;
-      }
-      .footer-links {
-        display: block;
-        padding: 10px 0;
-      }
-      .additional-links {
-        display: block;
-      }
-    }
-
-  </style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="includes/style.css">
   
 </head>
 
 <body>
-  <div class="page-wrapper">
-    <div class="content-wrapper">
-      <div class="content">
-        <div class="logo-wrapper swingimage">
-          <hr class="swingstring" width="1" size="50" />
-          <div class="logo">
-            <img src="images/said-betty2.jpg" alt="Said Betty Poster">
-          </div>
-        </div>
-        <div class="heading">
-          <h1>Said Betty</h1>
-          <h2>Live Music, Acoustic Duo & DJ</h2>
-        </div>
-        <div class="description">
-          <p>Immerse your events in musical allure with our Gold Coast-based duo, specializing in weddings and corporate gatherings. From the lively Gold Coast to the vibrant hubs of Brisbane, Toowoomba, Sunshine Coast, and Byron Bay, we're poised to bring enchantment to your celebrations.</p>
-        </div>
-        <a class="button" href="/bookings">Make Booking</a>
-        <div class="social-wrapper">
-          <div class="social-link tooltip">
-            <span class="tooltiptext">Youtube</span>
-            <a class="icon youtube-link" href="https://www.youtube.com/@saidbetty"><i class="fa-brands fa-youtube"></i></a>
-          </div>
-          <div class="social-link tooltip">
-            <a class="icon facebook-link" href="https://www.facebook.com/saidbetty.fb"><i class="fa-brands fa-facebook-f"></i></a>
-            <span class="tooltiptext">Facebook</span>
-          </div>
-          <div class="social-link tooltip">
-            <a class="icon instagram-link" href="https://www.instagram.com/saidbetty.ig"><i class="fa-brands fa-instagram"></i></a>
-            <span class="tooltiptext">Instagram</span>
-          </div>
-          <div class="social-link tooltip">
-            <a class="icon reverbnation-link" href="https://www.reverbnation.com/saidbetty"><i class="fa-solid fa-headphones-simple"></i></a>
-            <span class="tooltiptext">Reverbnation</span>
-          </div> 
-          <div class="social-link tooltip">
-            <a class="icon soundcloud-link" href="https://www.soundcloud.com/saidbetty"><i class="fa-brands fa-soundcloud"></i></a>
-            <span class="tooltiptext">Soundcloud</span>
-          </div>  
-        </div>
-        <div class="footer">
-          <h3 class="additional-links">Additional Links</h3>
-          <a class="footer-links" href="/docs/Said Betty - A7 Flyer.pdf">Promo Flyer</a>
-          <a class="footer-links" href="/docs/Said Betty - Stage Plan.pdf">Stage Layout</a>
-          <a class="footer-links" href="/docs/Said Betty - PLI 2024.pdf">Public Liability</a>
-          <a class="footer-links" href="#">Equipment</a>
+  <div class="flex-wrapper">
+    <div class="header">
+      {% include header.html %}
+    </div>
+    <div class="content">
+      <div class="logo-wrapper swingimage">
+        <hr class="swingstring" width="1" size="50" />
+        <div class="logo">
+          <img src="images/said-betty2.jpg" alt="Said Betty Poster">
         </div>
       </div>
+      <div class="heading">
+        <h1>Said Betty</h1>
+        <h2>Live Music, Acoustic Duo & DJ</h2>
+      </div>
+      <div class="description">
+        <p>Immerse your events in musical allure with our Gold Coast-based duo, specializing in weddings and corporate gatherings. From the lively Gold Coast to the vibrant hubs of Brisbane, Toowoomba, Sunshine Coast, and Byron Bay, we're poised to bring enchantment to your celebrations.</p>
+      </div>
+      <div class="social-wrapper">
+        <div class="social-link tooltip">
+          <span class="tooltiptext">Youtube</span>
+          <a class="icon youtube-link" href="https://www.youtube.com/@saidbetty"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="social-link tooltip">
+          <a class="icon facebook-link" href="https://www.facebook.com/saidbetty.fb"><i class="fa-brands fa-facebook-f"></i></a>
+          <span class="tooltiptext">Facebook</span>
+        </div>
+        <div class="social-link tooltip">
+          <a class="icon instagram-link" href="https://www.instagram.com/saidbetty.ig"><i class="fa-brands fa-instagram"></i></a>
+          <span class="tooltiptext">Instagram</span>
+        </div>
+        <div class="social-link tooltip">
+          <a class="icon reverbnation-link" href="https://www.reverbnation.com/saidbetty"><i class="fa-solid fa-headphones-simple"></i></a>
+          <span class="tooltiptext">Reverbnation</span>
+        </div> 
+        <div class="social-link tooltip">
+          <a class="icon soundcloud-link" href="https://www.soundcloud.com/saidbetty"><i class="fa-brands fa-soundcloud"></i></a>
+          <span class="tooltiptext">Soundcloud</span>
+        </div>  
+      </div>
+    </div>
+    <div class="footer">
+      <h3 class="additional-links">Additional Links</h3>
+      <a class="footer-links" href="/docs/Said Betty - A7 Flyer.pdf">Equipment</a>
+      <a class="footer-links" href="/docs/Said Betty - Stage Plan.pdf">Stage Plan</a>
+      <a class="footer-links" href="/docs/Said Betty - PLI 2024.pdf">Liability</a>
+      <a class="footer-links" href="bookings.html">Bookings</a>
     </div>
   </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
