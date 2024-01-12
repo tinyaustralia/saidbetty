@@ -61,9 +61,9 @@
       max-width: 700px;
       padding: 0 20px;
     }
-    .vl {
-      border-left: 5px solid #fff;
-      height: 100px;
+    .swingstring {
+      width: 1px;
+      background-color: #fff;
     }
     .logo {
       width: 300px;
@@ -71,6 +71,7 @@
       padding: 5px;
       border: 2px solid #fff;
       border-radius: 100%;
+      margin-top: -10px;
     }
     .logo img {
       width: 100%;
@@ -102,11 +103,20 @@
     h3 {
       margin: 30px 0 10px 0;
     }
+    .button {
+      background-color: #333;
+      padding: 10px 20px;
+      margin: 15px 0 50px;
+      border: 1px solid #444;
+      border-radius: 8px;
+      text-transform: uppercase;
+      box-shadow: 0 3px 15px -10px #000;
+    }
     .social-wrapper {
       display: flex;
     }
     .social-link {
-      margin: 15px;
+      margin: 0 15px;
     }
     .social-wrapper .icon {
       display: inline-flex;
@@ -141,7 +151,7 @@
     }
     .footer-links {
       display: inline-block;
-      margin: 5px;
+      margin: 0 15px;
       font-size: 14px;
     }
     
@@ -156,28 +166,66 @@
       100%{transform: rotate(10deg);}
     }
     .swingimage {
+      margin-top: -15px;
       -webkit-transform-origin: 50% 0;
       transform-origin: 50% 0;
       -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
       animation: swinging 3.5s ease-in-out forwards infinite;
     }
+    .additional-links {
+      display: none;
+    }
+  
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
 
-  @media screen and (max-width: 767px) {
-    .page-wrapper {
-    height: 100%;
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      padding: 5px;
+      border-radius: 6px;
+      font-size: 14px;
+      position: absolute;
+      left:-30px;
+      bottom: -40px;
+      z-index: 1;
+      width:100px;
     }
-    .logo {
-      width: 200px;
-      height: 200px;
-      margin-bottom: 20px;
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
     }
-    .heading h1 {
-      font-size: 50px;
+
+    @media screen and (max-width: 767px) {
+      .page-wrapper {
+      height: 100%;
+      }
+      .logo {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+      }
+      .heading h1 {
+        font-size: 50px;
+      }
+      .heading h2 {
+        font-size: 20px;
+      }
+      .social-link {
+        margin: 0 5px;
+      }
+      .footer-links {
+        display: block;
+        padding: 10px 0;
+      }
+      .additional-links {
+        display: block;
+      }
     }
-    .heading h2 {
-      font-size: 20px;
-    }
-  }
 
   </style>
   
@@ -188,7 +236,7 @@
     <div class="content-wrapper">
       <div class="content">
         <div class="logo-wrapper swingimage">
-          <hr width="1" size="50" style="0 auto" />
+          <hr class="swingstring" width="1" size="50" />
           <div class="logo">
             <img src="images/said-betty2.jpg" alt="Said Betty Poster">
           </div>
@@ -200,28 +248,35 @@
         <div class="description">
           <p>Immerse your events in musical allure with our Gold Coast-based duo, specializing in weddings and corporate gatherings. From the lively Gold Coast to the vibrant hubs of Brisbane, Toowoomba, Sunshine Coast, and Byron Bay, we're poised to bring enchantment to your celebrations.</p>
         </div>
+        <a class="button" href="/bookings">Make Booking</a>
         <div class="social-wrapper">
-          <div class="social-link">
+          <div class="social-link tooltip">
+            <span class="tooltiptext">Youtube</span>
             <a class="icon youtube-link" href="https://www.youtube.com/@saidbetty"><i class="fa-brands fa-youtube"></i></a>
           </div>
-          <div class="social-link">
+          <div class="social-link tooltip">
             <a class="icon facebook-link" href="https://www.facebook.com/saidbetty.fb"><i class="fa-brands fa-facebook-f"></i></a>
+            <span class="tooltiptext">Facebook</span>
           </div>
-          <div class="social-link">
+          <div class="social-link tooltip">
             <a class="icon instagram-link" href="https://www.instagram.com/saidbetty.ig"><i class="fa-brands fa-instagram"></i></a>
+            <span class="tooltiptext">Instagram</span>
           </div>
-          <div class="social-link">
-            <a class="icon soundcloud-link" href="https://www.soundcloud.com/saidbetty"><i class="fa-brands fa-soundcloud"></i></a>
-          </div>
-          <div class="social-link">
+          <div class="social-link tooltip">
             <a class="icon reverbnation-link" href="https://www.reverbnation.com/saidbetty"><i class="fa-solid fa-headphones-simple"></i></a>
-          </div>   
+            <span class="tooltiptext">Reverbnation</span>
+          </div> 
+          <div class="social-link tooltip">
+            <a class="icon soundcloud-link" href="https://www.soundcloud.com/saidbetty"><i class="fa-brands fa-soundcloud"></i></a>
+            <span class="tooltiptext">Soundcloud</span>
+          </div>  
         </div>
         <div class="footer">
-          <a class="footer-links" href="/docs/Said Betty - A7 Flyer.pdf">Flyer</a>
-          <a class="footer-links" href="/docs/Said Betty - Stage Plan.pdf">Stage Plan</a>
-          <a class="footer-links" href="/docs/Said Betty - PLI 2024.pdf">Liability</a>
-          <a class="footer-links" href="contact.html">Bookings</a>
+          <h3 class="additional-links">Additional Links</h3>
+          <a class="footer-links" href="/docs/Said Betty - A7 Flyer.pdf">Promo Flyer</a>
+          <a class="footer-links" href="/docs/Said Betty - Stage Plan.pdf">Stage Layout</a>
+          <a class="footer-links" href="/docs/Said Betty - PLI 2024.pdf">Public Liability</a>
+          <a class="footer-links" href="#">Equipment</a>
         </div>
       </div>
     </div>
